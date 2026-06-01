@@ -18,8 +18,8 @@ This repo is set up for Cloudflare Workers.
 wrangler deploy
 ```
 
-The deploy entry is `dist/worker.js`, configured in `wrangler.jsonc`.
+The deploy entry is `worker.js`, configured in `wrangler.jsonc`. The Worker serves `index.html` and loads the game source from `src/main.js` plus `src/styles.css`.
 
 ## Notes
 
-The prototype starts directly in the arena. Gameplay state is kept separate from the Phaser rendering path in the `src` files, while `dist/worker.js` is the deployable Worker bundle.
+The prototype starts directly in the arena and uses Phaser from jsDelivr, so the repository stays small and does not need a checked-in vendor bundle.
