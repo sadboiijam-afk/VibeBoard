@@ -2,5 +2,11 @@
   "name": "ironhold-arena",
   "main": "worker.js",
   "compatibility_date": "2026-06-01",
-  "workers_dev": true
+  "workers_dev": true,
+  "observability": {
+    "logs": {
+      "enabled": false,
+      "invocation_logs": true
+    }
+  }
 }
